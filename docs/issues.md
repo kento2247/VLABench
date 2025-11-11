@@ -62,3 +62,8 @@ Then the python will report the packages your environment doesn't have.
 
 ### Issues about Lerobot Version.
 The lerobot conversion script is accomplished by referencing the openpi implementation. The openpi codebase VLABench used is [openpi](https://github.com/Shiduo-zh/openpi). Make sure the libary `datasets==3.2.0` when converting hdf5/rlds to lerobot format. Otherwise, there will be some incompatible problems. 
+
+### Issues about Inverse Kinematics
+When evaluating policies, you may encouter a warning like   
+"WARNING:absl:Failed to converge after 99 steps: err_norm=0.0868166".
+This is not a bug, but rather a failure of the inverse kinematics solution caused by the robotic arm exceeding its working limits due to unreasonable model outputs.

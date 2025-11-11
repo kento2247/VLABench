@@ -7,6 +7,11 @@
 
 ## News
 * **Preview** A complete infra framework will be open-sourced alongside new work, including full training pipelines, VLABench evaluation, a new leaderboard, data processing, and real-device deployment. Stay tuned!  
+* **2025/11/10** Upload several new checkpoints as baselines. Action representation matters. 
+    - [Pi05-ft-primitive](https://huggingface.co/VLABench/pi05-primitive-10task): Track 1 SR 40.6%.
+    - [Pi0-ft-primitive(10 tasks)](https://huggingface.co/VLABench/pi0-primitive-10task): Track 1 SR 47%.
+    - [Pifast-ft-primitive(10 tasks)(relative chunk)](https://huggingface.co/VLABench/pi0-fast-primitive-10task): Track 1 SR 29.1%. This is the official transform.
+    - [Pifast-ft-primitive(10 tasks)(delta chunk)](https://huggingface.co/VLABench/pi0-fast-ft-primitive-10task-deltachunk): Track 1 SR 51.2%. This is the aligned transform.
 * **2025/8/06** Update VLABench with: 
     - parrallel data collection; 
     - parrallel evaluation example; 
